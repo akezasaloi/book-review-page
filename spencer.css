@@ -113,12 +113,34 @@
    }
    
 }
+.visuals{
+    button{
+        margin-bottom: 1%;
+        justify-self: center;
+        display:block;
+        padding:2em 4em;
+        border:none;
+        background-color: red;
+        border-radius: 50px;
+        color:white;
+        font-family: kugile;
+        }
+
+}
+.visuals-image{
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    img{
+        display:block;
+        width: 50%;
+    }
+}
 header{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/lc-bg.jpg');
     background-size:cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    /* position: sticky; */
     top:0;
     justify-items: center;
     width:100%;
