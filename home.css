@@ -1,0 +1,1089 @@
+*{
+    margin:0;
+    
+}
+ @font-face {
+    font-family: 'rekalgera';
+    src: url('Fonts/Rekalgera-Regular.otf');
+} 
+@font-face {
+    font-family: 'kugile';
+    src: url('Fonts/Kugile_Demo.ttf');
+}
+@font-face {
+    font-family: 'Pin-Sans';
+    src: url('https://s.pinimg.com/webapp/Pin-Sans-MacOS-Bold-ce475d98.woff2') format('woff2');
+} 
+h1{
+    font-family: rekalgera;
+    font-size: 80px;
+
+    text-align: center;
+    line-height: 1.3;
+}
+.homepage{
+    background-image: url(Images/jaredd-craig-HH4WBGNyltc-unsplash.jpg);
+    background-size: cover; 
+    background-position:bottom; 
+    background-repeat: no-repeat; 
+    color:white;
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'American Typewriter';
+    font-weight: 300;
+}
+.navigation-section{
+    h1{
+        font-weight: 100;
+    }
+}
+.book-summaries-and-reviews{
+    width:60%;
+    padding: 0 5%;
+    color:white;
+    h1{
+        font-weight: 100;
+    }
+}
+.books{
+    h1{
+        font-weight:900;
+    }
+}
+header{
+    width:100%;
+    text-align: center;
+    padding:2% 0;
+    >ul a{
+        font-size: 30px;
+        text-decoration: none;
+        color:white;
+        padding:25px;
+        font-family: rekalgera;
+    }
+    >ul{
+        list-style-type:none;
+        display:flex;
+    }
+}
+i{
+    color:white;
+}
+.read{
+    position: relative;
+    display:inline-block;
+    p{
+        font-size: 30px;
+        font-family: rekalgera;
+        margin-right: 25px;
+        color:white;
+    }
+}
+.reviews{
+    position: relative;
+    display:inline-block;
+    p{
+        font-size: 30px;
+        font-family: rekalgera;
+        margin-right: 25px;
+        color:white;
+    }
+}
+.book-shelf, .reviewers{
+    background-color:#BF784E;
+    border-radius: 20px;
+    display:none;
+    position:absolute;
+    top:90%;
+    ul{
+        list-style-type: none;
+        padding:5px;
+    }
+    
+    li{
+        color: rgb(255,255,255);
+        font-family: rekalgera;
+        border-bottom:white 2px dotted;
+        margin: 0 2px;
+    }
+    a{
+        color: rgb(255,255,255);
+    }
+    a:hover{
+        color: rgb(25,25,25);
+    }
+}
+.book-shelf{
+    width:350px;
+    left:-100%;
+}
+.reviewers{
+    width:280px;
+    left:-45%;
+}
+.read:hover .book-shelf , .reviews:hover .reviewers{
+    display:block;
+}
+.born-a-crime-summary,.who-moved-my-cheese-summary{
+    margin:3% 0;
+    display: flex;
+    text-align: center;
+    gap:30px;
+    img{
+       width: 280px;
+       height: 320px;
+    }
+    img:hover{
+        transform: scale(1.1);
+        border: none;
+    }
+}
+.navigation-section{
+    width:40%;   
+    justify-items: center;
+    h1{
+        margin-top: 30%;
+        color:rgb(247, 246, 246);
+    }    
+}
+
+.book-quote{
+    width: 100%;
+    height:100px;
+    position: relative;
+    margin-top: 5%;
+    h1{
+        font-size: 35px;
+    }
+   
+}
+.quote{
+    font-size: 22px;
+    font-family: kugile;
+    font-weight: bold;
+    position: absolute;
+    opacity:0;
+    margin-top: 20px;
+    padding: 0 10px;
+    margin-right: 10px;  
+    animation:12s infinite;
+}
+
+.quote:nth-child(1){
+    animation-name: swap;
+    animation-delay: 0s;
+}
+.quote:nth-child(2){
+    animation-name: swap;
+    animation-delay: 4s;
+}
+.quote:nth-child(3){
+    animation-name: swap;
+    animation-delay: 8s;
+}
+.book-quote:hover .quote{
+    animation-play-state: paused;
+}
+@keyframes swap{
+    0%, 100% {opacity:0; transform:translateY(20px);}
+    5%, 30% {opacity:1; transform:translateY(0);}
+    35%, 100% {opacity:0; transform:translateY(-20px);}
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+*{
+    margin:0;
+    max-width:  480px; 
+    /* overflow-y: auto; */
+    
+}
+
+h1{
+    font-size: 40px;
+
+    text-align: justify;
+    line-height: 50px;
+}
+.homepage{
+    background-image: url(Images/jaredd-craig-HH4WBGNyltc-unsplash.jpg);
+    background-size:cover; 
+    margin: 0;
+    background-repeat: repeat; 
+    color:white;
+    display: flex;
+    height: 113vh;
+    width: 102vw;
+    box-sizing: border-box;
+   
+}
+.navigation-options{
+    h1{
+        display: none;
+        font-weight: 100;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
+.book-summaries-and-reviews{
+    width:40vw;
+    margin-left: -2vh;
+    margin-top: 8vh;
+    color:white;
+    h1{
+        margin-right: 6vh;
+        font-size: 190%;
+        font-weight: 50;
+    }
+}
+.books{
+    h1{
+        display: none;
+        font-weight:900;
+    }
+}
+header{
+    width:100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -30px;
+    ul a{
+        font-size: 30px;
+        color: white;
+    }
+    ul{
+        list-style-type:none;
+        gap: 30px;
+        /* text-align: center; */
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
+.fa-solid{
+    margin-right: 50px;
+    color: white;
+}
+.fa-book{
+    margin-left: 5vh;
+    /* margin-right: vw; */
+}
+.fa-address-card{
+    margin-left: 8vw;
+}
+.read{
+    position: relative;
+    display:inline-block;
+    p{
+        font-size: 30px;
+        font-family: rekalgera;
+        margin-right: 25px;
+        color:white;
+    }
+}
+.reviews{
+    position: relative;
+    display:inline-block;
+    p{
+        font-size: 30px;
+        font-family: rekalgera;
+
+        color:white;
+    }
+}
+.book-shelf, .reviewers{
+    background-color:#BF784E;
+    border-radius: 20px;
+    /* display:none; */
+    position:absolute;
+    top:10%;
+    margin-left:210px;
+    ul{
+        list-style-type: none;
+        gap:0%;
+        padding:5px;
+        display: block;
+    }
+    
+    li{
+
+        color: rgb(255,255,255);
+        font-family: rekalgera;
+        border-bottom:white 2px dotted;
+        margin: 0 2px;
+    }
+    a{
+        color: rgb(255,255,255);
+    }
+    a:focus{
+        color: rgb(25,25,25);
+    }
+}
+.book-shelf{
+    width:70vw;
+    top: 12vh;
+    left:-130%;
+    li a{
+        font-size: 17px;
+        font-weight: 50;
+        font-style: normal;
+    }
+}
+.reviewers{
+    width:60vw;
+    top:-1vh;
+    left:-80%;
+    li a{
+        font-size: 20px;
+        font-weight: 50;
+        font-style: normal;
+    }
+}
+.read:hover .book-shelf , .reviews:hover .reviewers{
+    display:block;
+}
+.born-a-crime-summary,.who-moved-my-cheese-summary{
+    margin:3% 0;
+    display: flex;
+    text-align: center;
+    img{
+       width: 100%;
+       height: 80%;
+    }
+    img:hover{
+        transform: scale(1.1);
+        border: none;
+    }
+}
+.navigation-section{
+    
+    width:40%;   
+    justify-items: center;
+    h1{
+        display: none;
+    }    
+}
+
+.book-quote{
+    display: none; 
+}
+}
+@media only screen and (min-width:480px) and (max-width:640px){
+    *{
+        margin:0;
+        max-width:  480px; 
+        /* overflow-y: auto; */
+        
+    }
+    
+    h1{
+        font-size: 40px;
+    
+        text-align: justify;
+        line-height: 50px;
+    }
+    .homepage{
+        background-image: url(Images/jaredd-craig-HH4WBGNyltc-unsplash.jpg);
+        background-size:cover; 
+        margin: 0;
+        background-repeat: repeat; 
+        color:white;
+        display: flex;
+        height: 113vh;
+        width: 102vw;
+        box-sizing: border-box;
+       
+    }
+    .navigation-options{
+        h1{
+            display: none;
+            font-weight: 100;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+    }
+    .book-summaries-and-reviews{
+        width:40vw;
+        margin-left: -2vh;
+        margin-top: 8vh;
+        color:white;
+        h1{
+            margin-right: 6vh;
+            font-size: 190%;
+            font-weight: 50;
+        }
+    }
+    .books{
+        h1{
+            display: none;
+            font-weight:900;
+        }
+    }
+    header{
+        width:100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -30px;
+        ul a{
+            font-size: 30px;
+            color: white;
+        }
+        ul{
+            list-style-type:none;
+            gap: 30px;
+            /* text-align: center; */
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+    .fa-solid{
+        margin-right: 50px;
+        color: white;
+    }
+    .fa-book{
+        margin-left: 5vh;
+        /* margin-right: vw; */
+    }
+    .fa-address-card{
+        margin-left: 8vw;
+    }
+    .read{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+            margin-right: 25px;
+            color:white;
+        }
+    }
+    .reviews{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+    
+            color:white;
+        }
+    }
+    .book-shelf, .reviewers{
+        background-color:#BF784E;
+        border-radius: 20px;
+        /* display:none; */
+        position:absolute;
+        top:10%;
+        margin-left:210px;
+        ul{
+            list-style-type: none;
+            gap:0%;
+            padding:5px;
+            display: block;
+        }
+        
+        li{
+    
+            color: rgb(255,255,255);
+            font-family: rekalgera;
+            border-bottom:white 2px dotted;
+            margin: 0 2px;
+        }
+        a{
+            color: rgb(255,255,255);
+        }
+        a:focus{
+            color: rgb(25,25,25);
+        }
+    }
+    .book-shelf{
+        width:70vw;
+        top: 12vh;
+        left:-130%;
+        li a{
+            font-size: 17px;
+            font-weight: 50;
+            font-style: normal;
+        }
+    }
+    .reviewers{
+        width:60vw;
+        top:-1vh;
+        left:-80%;
+        li a{
+            font-size: 20px;
+            font-weight: 50;
+            font-style: normal;
+        }
+    }
+    .read:hover .book-shelf , .reviews:hover .reviewers{
+        display:block;
+    }
+    .born-a-crime-summary,.who-moved-my-cheese-summary{
+        margin:3% 0;
+        display: flex;
+        text-align: center;
+        img{
+           width: 100%;
+           height: 80%;
+        }
+        img:hover{
+            transform: scale(1.1);
+            border: none;
+        }
+    }
+    .navigation-section{
+        
+        width:40%;   
+        justify-items: center;
+        h1{
+            display: none;
+        }    
+    }
+    
+    .book-quote{
+        display: none; 
+    }
+}
+@media only screen and (min-width:640px)and (max-width:1000px){
+    *{
+        margin:0;
+        max-width:  480px; 
+        /* overflow-y: auto; */
+        
+    }
+    
+    h1{
+        font-size: 40px;
+    
+        text-align: justify;
+        line-height: 50px;
+    }
+    .homepage{
+        background-image: url(Images/jaredd-craig-HH4WBGNyltc-unsplash.jpg);
+        background-size:cover; 
+        margin: 0;
+        background-repeat: repeat; 
+        color:white;
+        display: flex;
+        height: 113vh;
+        width: 102vw;
+        box-sizing: border-box;
+       
+    }
+    .navigation-options{
+        h1{
+            display: none;
+            font-weight: 100;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+    }
+    .book-summaries-and-reviews{
+        width:40vw;
+        margin-left: -2vh;
+        margin-top: 8vh;
+        color:white;
+        h1{
+            margin-right: 6vh;
+            font-size: 190%;
+            font-weight: 50;
+        }
+    }
+    .books{
+        h1{
+            display: none;
+            font-weight:900;
+        }
+    }
+    header{
+        width:100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -30px;
+        ul a{
+            font-size: 30px;
+            color: white;
+        }
+        ul{
+            list-style-type:none;
+            gap: 30px;
+            /* text-align: center; */
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+    .fa-solid{
+        margin-right: 50px;
+        color: white;
+    }
+    .fa-book{
+        margin-left: 5vh;
+        /* margin-right: vw; */
+    }
+    .fa-address-card{
+        margin-left: 8vw;
+    }
+    .read{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+            margin-right: 25px;
+            color:white;
+        }
+    }
+    .reviews{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+    
+            color:white;
+        }
+    }
+    .book-shelf, .reviewers{
+        background-color:#BF784E;
+        border-radius: 20px;
+        /* display:none; */
+        position:absolute;
+        top:10%;
+        margin-left:210px;
+        ul{
+            list-style-type: none;
+            gap:0%;
+            padding:5px;
+            display: block;
+        }
+        
+        li{
+    
+            color: rgb(255,255,255);
+            font-family: rekalgera;
+            border-bottom:white 2px dotted;
+            margin: 0 2px;
+        }
+        a{
+            color: rgb(255,255,255);
+        }
+        a:focus{
+            color: rgb(25,25,25);
+        }
+    }
+    .book-shelf{
+        width:70vw;
+        top: 12vh;
+        left:-130%;
+        li a{
+            font-size: 17px;
+            font-weight: 50;
+            font-style: normal;
+        }
+    }
+    .reviewers{
+        width:60vw;
+        top:-1vh;
+        left:-80%;
+        li a{
+            font-size: 20px;
+            font-weight: 50;
+            font-style: normal;
+        }
+    }
+    .read:hover .book-shelf , .reviews:hover .reviewers{
+        display:block;
+    }
+    .born-a-crime-summary,.who-moved-my-cheese-summary{
+        margin:3% 0;
+        display: flex;
+        text-align: center;
+        img{
+           width: 100%;
+           height: 80%;
+        }
+        img:hover{
+            transform: scale(1.1);
+            border: none;
+        }
+    }
+    .navigation-section{
+        
+        width:40%;   
+        justify-items: center;
+        h1{
+            display: none;
+        }    
+    }
+    
+    .book-quote{
+        display: none; 
+    }
+}
+@media only screen and (min-width:1000px)and (max-width:1650px){
+    *{
+        margin:0;
+        max-width:  480px; 
+        /* overflow-y: auto; */
+        
+    }
+    
+    h1{
+        font-size: 40px;
+    
+        text-align: justify;
+        line-height: 50px;
+    }
+    .homepage{
+        background-image: url(Images/jaredd-craig-HH4WBGNyltc-unsplash.jpg);
+        background-size:cover; 
+        margin: 0;
+        background-repeat: repeat; 
+        color:white;
+        display: flex;
+        height: 113vh;
+        width: 102vw;
+        box-sizing: border-box;
+       
+    }
+    .navigation-options{
+        h1{
+            display: none;
+            font-weight: 100;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+    }
+    .book-summaries-and-reviews{
+        width:40vw;
+        margin-left: -2vh;
+        margin-top: 8vh;
+        color:white;
+        h1{
+            margin-right: 6vh;
+            font-size: 190%;
+            font-weight: 50;
+        }
+    }
+    .books{
+        h1{
+            display: none;
+            font-weight:900;
+        }
+    }
+    header{
+        width:100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -30px;
+        ul a{
+            font-size: 30px;
+            color: white;
+        }
+        ul{
+            list-style-type:none;
+            gap: 30px;
+            /* text-align: center; */
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+    .fa-solid{
+        margin-right: 50px;
+        color: white;
+    }
+    .fa-book{
+        margin-left: 5vh;
+        /* margin-right: vw; */
+    }
+    .fa-address-card{
+        margin-left: 8vw;
+    }
+    .read{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+            margin-right: 25px;
+            color:white;
+        }
+    }
+    .reviews{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+    
+            color:white;
+        }
+    }
+    .book-shelf, .reviewers{
+        background-color:#BF784E;
+        border-radius: 20px;
+        /* display:none; */
+        position:absolute;
+        top:10%;
+        margin-left:210px;
+        ul{
+            list-style-type: none;
+            gap:0%;
+            padding:5px;
+            display: block;
+        }
+        
+        li{
+    
+            color: rgb(255,255,255);
+            font-family: rekalgera;
+            border-bottom:white 2px dotted;
+            margin: 0 2px;
+        }
+        a{
+            color: rgb(255,255,255);
+        }
+        a:focus{
+            color: rgb(25,25,25);
+        }
+    }
+    .book-shelf{
+        width:70vw;
+        top: 12vh;
+        left:-130%;
+        li a{
+            font-size: 17px;
+            font-weight: 50;
+            font-style: normal;
+        }
+    }
+    .reviewers{
+        width:60vw;
+        top:-1vh;
+        left:-80%;
+        li a{
+            font-size: 20px;
+            font-weight: 50;
+            font-style: normal;
+        }
+    }
+    .read:hover .book-shelf , .reviews:hover .reviewers{
+        display:block;
+    }
+    .born-a-crime-summary,.who-moved-my-cheese-summary{
+        margin:3% 0;
+        display: flex;
+        text-align: center;
+        img{
+           width: 100%;
+           height: 80%;
+        }
+        img:hover{
+            transform: scale(1.1);
+            border: none;
+        }
+    }
+    .navigation-section{
+        
+        width:40%;   
+        justify-items: center;
+        h1{
+            display: none;
+        }    
+    }
+    
+    .book-quote{
+        display: none; 
+    }
+}
+@media only screen and(min-width:1650px)and (max-width:2048px){
+    *{
+        margin:0;
+        max-width:  480px; 
+        /* overflow-y: auto; */
+        
+    }
+    
+    h1{
+        font-size: 40px;
+    
+        text-align: justify;
+        line-height: 50px;
+    }
+    .homepage{
+        background-image: url(Images/jaredd-craig-HH4WBGNyltc-unsplash.jpg);
+        background-size:cover; 
+        margin: 0;
+        background-repeat: repeat; 
+        color:white;
+        display: flex;
+        height: 113vh;
+        width: 102vw;
+        box-sizing: border-box;
+       
+    }
+    .navigation-options{
+        h1{
+            display: none;
+            font-weight: 100;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+    }
+    .book-summaries-and-reviews{
+        width:40vw;
+        margin-left: -2vh;
+        margin-top: 8vh;
+        color:white;
+        h1{
+            margin-right: 6vh;
+            font-size: 190%;
+            font-weight: 50;
+        }
+    }
+    .books{
+        h1{
+            display: none;
+            font-weight:900;
+        }
+    }
+    header{
+        width:100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -30px;
+        ul a{
+            font-size: 30px;
+            color: white;
+        }
+        ul{
+            list-style-type:none;
+            gap: 30px;
+            /* text-align: center; */
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+    .fa-solid{
+        margin-right: 50px;
+        color: white;
+    }
+    .fa-book{
+        margin-left: 5vh;
+        /* margin-right: vw; */
+    }
+    .fa-address-card{
+        margin-left: 8vw;
+    }
+    .read{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+            margin-right: 25px;
+            color:white;
+        }
+    }
+    .reviews{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+    
+            color:white;
+        }
+    }
+    .book-shelf, .reviewers{
+        background-color:#BF784E;
+        border-radius: 20px;
+        /* display:none; */
+        position:absolute;
+        top:10%;
+        margin-left:210px;
+        ul{
+            list-style-type: none;
+            gap:0%;
+            padding:5px;
+            display: block;
+        }
+        
+        li{
+    
+            color: rgb(255,255,255);
+            font-family: rekalgera;
+            border-bottom:white 2px dotted;
+            margin: 0 2px;
+        }
+        a{
+            color: rgb(255,255,255);
+        }
+        a:focus{
+            color: rgb(25,25,25);
+        }
+    }
+    .book-shelf{
+        width:70vw;
+        top: 12vh;
+        left:-130%;
+        li a{
+            font-size: 17px;
+            font-weight: 50;
+            font-style: normal;
+        }
+    }
+    .reviewers{
+        width:60vw;
+        top:-1vh;
+        left:-80%;
+        li a{
+            font-size: 20px;
+            font-weight: 50;
+            font-style: normal;
+        }
+    }
+    .read:hover .book-shelf , .reviews:hover .reviewers{
+        display:block;
+    }
+    .born-a-crime-summary,.who-moved-my-cheese-summary{
+        margin:3% 0;
+        display: flex;
+        text-align: center;
+        img{
+           width: 100%;
+           height: 80%;
+        }
+        img:hover{
+            transform: scale(1.1);
+            border: none;
+        }
+    }
+    .navigation-section{
+        
+        width:40%;   
+        justify-items: center;
+        h1{
+            display: none;
+        }    
+    }
+    
+    .book-quote{
+        display: none; 
+    }
+}
