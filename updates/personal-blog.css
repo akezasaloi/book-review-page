@@ -5,15 +5,6 @@ body{
     position: relative;
 }
 header{
-    /* margin-top: 0%; */
-    position: relative;
-    background-image:linear-gradient(rgba(10, 3, 46, 0.728),rgba(10, 3, 46, 0.728)) ,url(blog-images/Library.jpg);
-    background-repeat: no-repeat;
-    background-size:195vh;
-    /* padding-top: 0; */
-    /* background-position-y: bottom; */
-}
-.blog-navigation{
     margin-top: -1%;
     padding: 1%;
     margin-left:80% ;
@@ -22,7 +13,18 @@ nav ul a{
     color: white;
     margin:0 2%;
 }
+    /* margin-top: 0%; */
+  
+    /* padding-top: 0; */
+    /* background-position-y: bottom; */
+}
+.blog{
+
     /* padding-top: 0%; */
+    position: relative;
+    background-image:linear-gradient(rgba(10, 3, 46, 0.728),rgba(10, 3, 46, 0.728)) ,url(blog-images/Library.jpg);
+    background-repeat: no-repeat;
+    background-size:195vh;
 }
 .blog-introduction-part{
     display: flex;
@@ -55,8 +57,12 @@ img
         font-size: 10vh;
     }
     img{
-        width: 2vh;
+        width: 20vh;
     }
+}
+.book{
+    display: flex;
+    width: 32.8vw;
 }
 .last-read{
     h1{
@@ -65,12 +71,29 @@ img
 }
 .books-I-have-read{
     display: flex;
-    gap: 20%;
+    gap: 10%;
     margin: 2% 8%;
+    /* p{
+
+    } */
 }
 .more-related-books{
     display: flex;
-    gap: 20%;
-    margin: 2% 8%;
+    gap: -30%;
+    margin: 1% 5% ;
+    p{
+        /* text-align: justify; */
+        margin: 15% 5%;
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    .contact-info{
+background-color: rgb(4, 4, 38);
+height: 10vh;
 
+}
 }
