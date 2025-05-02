@@ -6,6 +6,10 @@
     font-family: 'kugile';
     src: url('Fonts-about-page/Kugile_Demo.ttf');
 }
+@font-face {
+    font-family: rekalgera;
+    src: url('Fonts-about-page/Rekalgera-Regular.otf');
+}
 html{
     scroll-behavior: smooth;
 }
@@ -22,21 +26,28 @@ header{
     ul{
         list-style-type: none;
     }
-    li{
+    >ul >li{
         display: inline;
-    }
-
-    a{
-        text-decoration: none;
-        color:#ffffff;
         padding: 0.8em 2em;
+        color: #ffffff;
         font-size:22px;
         font-weight: bold;
     }
-    a:hover{
-        color: black;
-        background-color: #ffffff;
+
+    .nav{
+        text-decoration: none;
+        color:#ffffff;
+        font-size:22px;
+        font-weight: bold;
     }
+    >ul li:hover{
+        background-color: #ffffff;
+        color:#000000;
+        .nav, p {
+            color: black;
+        }
+    }
+
 }
 
 .main{
@@ -255,7 +266,6 @@ header{
         text-decoration: none;
         font-weight: bold;
         font-family: kugile; 
-        font-size: 20px;
         color:white;
     }
 
@@ -422,3 +432,47 @@ footer{
         font-size: 25px;
     }
 }
+
+.reviews , .read{
+    position: relative;
+    display:inline-block;
+    p{
+        font-size:22px;
+        margin-right: 25px;
+        color:white;
+    }
+}
+.book-shelf, .reviewers{
+    background-color:#2f4356;
+    border-radius: 20px;
+    display:none;
+    position:absolute;
+    top:90%;
+    
+    li{
+        color: rgb(255,255,255);
+        border-bottom:white 2px dotted;
+        margin: 0 2px;
+    }
+    a{
+        color: rgb(255,255,255);
+    }
+    a:hover{
+        color: rgb(25,25,25);
+    }
+}
+.book-shelf{
+    width:350px;
+    padding: 10px;
+    left:-50%;
+}
+.reviewers{
+    width:280px;
+    padding: 10px;
+    left:-50%;
+}
+.read:hover .book-shelf , .reviews:hover .reviewers{
+    display:block;
+}
+
+
