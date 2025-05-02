@@ -223,9 +223,11 @@ header{
 
 #individual-blogs{
     margin: 10% auto 5%;
+    width:80%;
     justify-items: center;
     justify-content: space-evenly;
-    display: flex;
+    display:grid;
+    grid-template-columns: auto auto;
     gap: 30px;
     padding: 10px;
     a{
