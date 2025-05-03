@@ -6,6 +6,10 @@
     font-family: 'kugile';
     src: url('Fonts-about-page/Kugile_Demo.ttf');
 }
+@font-face {
+    font-family: rekalgera;
+    src: url('Fonts-about-page/Rekalgera-Regular.otf');
+}
 html{
     scroll-behavior: smooth;
 }
@@ -22,21 +26,70 @@ header{
     ul{
         list-style-type: none;
     }
-    li{
+    >ul >li{
         display: inline;
-    }
-
-    a{
-        text-decoration: none;
-        color:#ffffff;
         padding: 0.8em 2em;
+        color: #ffffff;
         font-size:22px;
         font-weight: bold;
     }
-    a:hover{
-        color: black;
-        background-color: #ffffff;
+
+    .nav{
+        text-decoration: none;
+        color:#ffffff;
+        font-size:22px;
+        font-weight: bold;
     }
+    >ul li:hover{
+        background-color: #ffffff;
+        color:#000000;
+        .nav, p {
+            color: black;
+        }
+    }
+
+}
+
+.reviews , .read{
+    position: relative;
+    display:inline-block;
+    p{
+        font-size:22px;
+        margin-right: 25px;
+        color:white;
+    }
+}
+.book-shelf, .reviewers{
+    background-color:#2f4356;
+    border-radius: 20px;
+    display:none;
+    position:absolute;
+    top:90%;
+    
+    li{
+        color: rgb(255,255,255);
+        border-bottom:white 2px dotted;
+        margin: 0 2px;
+    }
+    a{
+        color: rgb(255,255,255);
+    }
+    a:hover{
+        color: rgb(25,25,25);
+    }
+}
+.book-shelf{
+    width:350px;
+    padding: 10px;
+    left:-50%;
+}
+.reviewers{
+    width:280px;
+    padding: 10px;
+    left:-50%;
+}
+.read:hover .book-shelf , .reviews:hover .reviewers{
+    display:block;
 }
 
 .main{
@@ -74,7 +127,7 @@ header{
         letter-spacing:5px;
     }
     .fa-quote-left, .fa-quote-right{
-        color:#282119;
+        color:#2f4356;
         margin: 10px 20px;
     }
 }
@@ -110,6 +163,7 @@ header{
     margin:5%;
     img{
         display: block;
+        max-width: 100%;
     }
 }
 #reviewed-books{
@@ -255,7 +309,6 @@ header{
         text-decoration: none;
         font-weight: bold;
         font-family: kugile; 
-        font-size: 20px;
         color:white;
     }
 
@@ -347,7 +400,7 @@ header{
 
 }
 
-.upcoming-book-picture{
+.upcoming-book-container{
     width:25%;
     padding: 3%;
     background-color: white;
@@ -392,12 +445,14 @@ header{
         font-size:50px;
     }
     input{
+        display:block;
         padding: 20px 100px 20px 10px;
         border-radius: 10px;
         font-weight: bolder;
         border:none;
     }
     button{
+        display:block;
         background-color: #282119;
         color:white;
         font-size: larger;
@@ -421,4 +476,86 @@ footer{
         padding: 0 10px;
         font-size: 25px;
     }
+}
+
+@media only screen and (max-width:500px){
+    header{
+        justify-items:left;
+        >ul >li{
+            padding: 5px;
+            font-size: 15px;
+        }
+        .nav{
+            font-size: 15px;
+        }
+    }
+    .title{
+        font-size: 45px;
+        padding: 2%;
+        text-align: center;
+    }
+   .main{
+    button{
+        margin:2em;
+        display: block;
+        text-align: center;
+    }
+   }
+   .reading-quote{
+    padding: 1em;
+    font-size: 25px;
+    text-align: center;
+    justify-items: center;
+   }
+
+   #about{
+    width:auto;
+   }
+
+   .who-moved-my-cheese, .born-a-crime{
+    flex-direction: column-reverse;
+   }
+
+   .about-review{
+    flex-direction: column;
+   }
+
+   #individual-blogs{
+    grid-template-columns:auto;
+   }
+
+   .reviewer{
+    width:auto;
+   }
+   .review-text{
+    width:auto;
+    padding: 5px;
+   }
+   .upcoming-book{
+    flex-direction: column;
+    gap:20px;
+   }
+   .upcoming-book-container{
+        width:auto;
+   }
+
+   .image-copyright{
+    left:25%;
+    top: 100%;
+    width:50%;
+    margin-bottom: 10px;
+   }
+
+   .update{
+    padding: 5% 2%;
+    margin-top: 30%;
+    h1{
+        font-size:25px;
+        text-align: center;
+    }
+
+    button{
+       margin:5px auto;
+    }
+   }
 }
