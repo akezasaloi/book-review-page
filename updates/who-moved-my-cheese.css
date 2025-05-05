@@ -1,0 +1,359 @@
+
+
+*{
+    margin:0;
+    /* box-sizing: border-box; */
+}
+body{
+    /* background-color: #4e9ce6; */
+}
+.about{
+    display: flex;
+    gap: 23%;
+    background-image: linear-gradient(rgba(5, 5, 7, 0.5), rgba(20, 29, 19, 5)),url(images-for-issues/book\ shelf\ \ one.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px; 
+    
+
+
+  img{
+    border: solid 5px white;
+    padding: 10px 10px 10px 10px;
+    margin-top: 35%;
+    margin-left: 24%;
+    height: 80%;
+    width: 320%;
+    border-radius: 12px;
+ 
+  }
+}
+.about-txt{
+    margin-top: 5%;
+    line-height: 250%;
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+        color: yellow;
+    }
+
+    p{
+        margin-top: 2%;
+        color: white;
+        font-size: 25px;
+    }
+
+}
+.his-quote{
+    margin-left: 6%;
+
+    width: 90%;
+
+    p{
+    color:#b6cee5;
+    }
+
+}
+#up{
+    
+    color:  yellow;
+    margin-left: -3%;
+
+}
+#down{
+    color: yellow;
+    margin-left: 98%;
+}
+header{
+    background-color:#2f4356;
+    justify-items: center;
+    padding: 0.5em;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    ul{
+        list-style-type: none;
+    }
+    li{
+        display: inline;
+    }
+    a{
+        text-decoration: none;
+        color:#ffffff;
+        padding: 0.8em 2em;
+        font-size:22px;
+        font-weight: bold;
+    }
+    a:hover{
+        color:  #282119;
+        background-color: #FFFFFF;
+    }
+}
+.intro{
+
+    display: flex;
+    gap: 20%;
+    margin-left: -38%;
+    margin-top: 10%;
+    
+    }
+    .intro-txt{
+
+        box-shadow: 0px 2px ;
+    color: #5b9ddb;
+    margin-left: 15%;
+   
+        h1{
+            font-size: 60px;
+            margin-left: 15%;
+
+        }
+        p{
+    color:#2f4356;
+    font-size: 25px;
+    margin-top: 6%;
+    margin-left: 30%;
+    
+        }
+    }
+    .intro-img img{
+        margin-left: -170%;
+        width: 150%;
+        border: 4px solid ;
+        color: #7cb1e2;
+        padding: 10px 10px 10px  10px;
+        
+    
+    
+    }
+.family{
+  
+    margin-top: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    gap: 30%;
+    
+}
+
+.family:hover .family-img img{
+    transform: scale(1.1);
+}
+.family-img > img{
+    height: 100%;
+    width: 250%;
+    border-radius: 10px;
+    margin-top: 15%;
+    transition: transform 0.5s ease; 
+    margin-left: 20%;
+}
+.family-txt{
+    margin-top: 5%;
+font-size: 25px;
+line-height: 150%;
+margin-left: 8%;
+border-left: 4px solid #5b9ddb;
+padding-left: 4%;
+
+    h1{
+        margin-bottom: 5%;
+        text-align: center;
+        color: #2f4356;
+    }
+   
+}
+.race{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    gap: 25%;
+    height: 70%;
+    padding-bottom: 5%;
+}
+.race:hover .race-img img{
+    transform: scale(1.1);
+}
+.race-img > img{
+    height: 70%;
+    width: 200%;
+    /* margin-left: -200%; */
+    /* margin-right: 50px; */
+    margin-left: -100%;
+    border-radius: 15px;
+    margin-top: 55%;
+    transition: transform 0.5s ease; 
+    
+}
+.race-txt{
+    margin-top: 5%;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 150%;
+    border-right: 4px solid #3a84ca;
+    padding-right: 5%;
+    h1{
+        margin-bottom: 5%;
+        text-align: center;
+        color: #2f4356;
+    }
+}
+.patricia{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    gap: 15%;
+  
+  
+}
+.patricia:hover .patricia-img img{
+    transform: scale(1.1);
+}
+.patricia-img > img{
+    height: 95%;
+    width: 130%;
+    margin-left: -8%;
+    margin-top: 18%;
+    border-radius: 10px;
+    transition: transform 0.5s ease; 
+   
+
+}
+.patricia-txt{
+    margin-top: 5%;
+    font-size: 25px;
+    line-height: 150%;
+    border-left: 4px solid #5b9ddb;
+    padding-left: 6%;
+    h1{
+        margin-bottom: 5%;
+        text-align: center;
+        color: #2f4356;
+    }
+}
+.patriarchy{
+    margin-top: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    gap: 30%;
+   
+}
+.patriarchy:hover .patriarchy-img img{
+    transform: scale(1.1);
+}
+.patriarchy-img > img{
+    height: 80%;
+    width: 160%;
+    margin-left: -100%;
+    margin-top: 35%;
+    border-radius: 10px;
+    transition: transform 0.5s ease; 
+
+}
+.patriarchy-txt{
+    margin-top: 5%;
+    font-size: 25px;
+    line-height: 150%;
+    border-right: 4px solid #3a84ca;
+    padding-right: 8%;
+    h1{
+        margin-bottom: 5%;
+        color: #2f4356;
+        text-align: center;
+    }
+}
+.humor{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    gap: 10%;
+    transition: transform 0.5s ease; 
+  
+}
+.humor:hover .humor-img img{
+    transform: scale(1.1);
+
+}
+.humor-img > img{
+    height: 130%;
+    width: 145%;
+    border-radius: 10px;
+    margin-left: -30%;
+    margin-top: 13%;
+}
+.humor-txt{
+    margin-top: 5%;
+    font-size: 25px;
+    line-height: 150%;
+    border-left: 4px solid #3a84ca;
+    padding-left: 5%;
+    h1{
+        margin-bottom: 5%;
+        text-align: center;
+        color: #2f4356;
+    }
+}
+.essence{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 25px;
+}
+footer{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1)), url(images-for-issues/book\ shelf\ \ one.jpg);
+    background-size:cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 1%;
+    font-size: 25px;
+    justify-items: center;
+    color: white;
+}
+.quote{
+    margin-top: 9%;
+    margin-bottom: 3%;
+    align-items: center;
+    
+   p{ 
+    font-size: 45px;
+    margin-bottom: 3%;
+    margin-left: 10%;
+
+}
+}
+#up-quote{
+font-size: 20px;
+    color:#277ccc;
+    margin-left: 0%;
+    margin-left: 8%;
+  
+
+}
+#down-quote{
+    font-size: 20px;
+    margin-left: 95%;
+    color: #277ccc;
+     
+}
+.summary{
+    border: 4px solid #5b9ddb;
+    margin-top: 10%;
+    margin-left: 25%;
+    height: 100%;
+    line-height: 300%;
+    width: 50%;
+    padding-left: 4%;
+    
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    p{
+        font-size: 25px;
+    }
+
+}
