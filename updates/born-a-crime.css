@@ -1,10 +1,9 @@
 * {
     margin: 0;
-    /* box-sizing: border-box; */
+    
 }
 
 body {
-    /* background-color: #4e9ce6; */
 }
 
 .about {
@@ -28,6 +27,20 @@ body {
         border-radius: 12px;
 
     }
+
+    p{
+        color: #FFFFFF;
+        width: 150%;
+    }
+
+    #source{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+#source{
+    color: black;
 }
 
 .about-txt {
@@ -104,7 +117,7 @@ header {
 .intro {
 
     display: flex;
-    gap: 20%;
+    gap: 50%;
     margin-left: -38%;
     margin-top: 16%;
 
@@ -129,20 +142,26 @@ header {
 }
 
 .intro-img img {
-    margin-left: -170%;
-    width: 150%;
+    margin-left: -300%;
+    width: 250%;
     border: 4px solid;
     color: #7cb1e2;
     padding: 10px 10px 10px 10px;
 
+
+    p{
+        color: black;
+    }
+
+    
 
 
 }
 
 .family {
 
-    margin-top: 40%;
-    margin-left: 10%;
+    margin-top: 43%;
+    margin-left: 15%;
     margin-right: 10%;
     display: flex;
     gap: 30%;
@@ -155,11 +174,15 @@ header {
 
 .family-img>img {
     height: 100%;
-    width: 250%;
+    width: 350%;
     border-radius: 10px;
     margin-top: 15%;
     transition: transform 0.5s ease;
     margin-left: 20%;
+
+    p{
+        width: 100%;
+    }
 }
 
 .family-txt {
@@ -191,14 +214,17 @@ header {
 .race:hover .race-img img {
     transform: scale(1.1);
 }
-
 .race-img>img {
     height: 50%;
     width: 280%;
-    margin-left: -200%;
+    margin-left: -170%;
     border-radius: 15px;
     margin-top: 165%;
     transition: transform 0.5s ease;
+
+    p{
+        margin-top: 20%;
+    }
 
 }
 
@@ -270,12 +296,16 @@ header {
 }
 
 .patriarchy-img>img {
-    height: 100%;
-    width: 750%;
-    margin-left: -680%;
+    height: 90%;
+    width: 550%;
+    margin-left: -400%;
     margin-top: 60%;
     border-radius: 10px;
     transition: transform 0.5s ease;
+
+    p{
+        margin-left: -10%;
+    }
 
 }
 
@@ -383,7 +413,9 @@ footer {
     height: 100%;
     line-height: 300%;
     width: 50%;
+    padding-top: 1%;
     padding-left: 4%;
+    padding-bottom: 2%;
 
     h2 {
         font-size: 40px;
