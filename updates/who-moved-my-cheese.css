@@ -355,3 +355,15 @@ font-size: 20px;
     }
 
 }
+
+.who-moved-my-cheese-advert{
+    margin-top: 10%;
+    margin-left: 25%;
+    height: 100%;
+    width: 50%;
+    padding-left: 4%;
+    img{
+        width: 80vh;
+        height: 50vh;
+    }
+}
